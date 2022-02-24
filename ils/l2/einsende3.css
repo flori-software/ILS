@@ -1,0 +1,19 @@
+.blueGreen {
+    background-color: green;
+    color: blue;
+    padding: 10px;
+}
+
+.blackYellow {
+    background-color: yellow;
+    color: black;
+    padding: 10px;
+}
+
+.whiteRed {
+    background-color: red;
+    color: white;
+    padding: 10px;
+    font-family: ArialBlack;
+}
+
