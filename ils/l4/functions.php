@@ -1,10 +1,10 @@
 <?php
 function dynAuswahl(string $id, string $name, array $options, bool $multiple, $label = "", $wert = "") {
-    echo "<p>\n";
+    echo "\n\t<p>\n";
     if($label != "") {
         echo "<label for='".$id."'>".$label."</label>";
     }
-    echo "<select name='".$name;
+    echo "\t<select name='".$name;
     // Eckige Klammer für die Übermittlung der Ergebnisse als Array
     if($multiple) {echo "[]";}
     echo "' id='".$id."' ";
@@ -12,11 +12,11 @@ function dynAuswahl(string $id, string $name, array $options, bool $multiple, $l
     if($multiple) {echo "multiple";}
     echo ">\n";
     foreach ($options as $option) {
-        echo "\t<option value='".$option."' ";
+        echo "\t\t<option value='".$option."' ";
         if($option == $wert) {echo "selected";}
         echo ">".$option."</option>\n";
     }
-    echo "</select>\n
+    echo "\t</select>
     </p>\n";
 }
 
