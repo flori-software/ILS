@@ -79,7 +79,4 @@ echo '<input type="submit" value="Rechnen">
 </form>
 </body>
 </html>';
-
-
-
 ?>

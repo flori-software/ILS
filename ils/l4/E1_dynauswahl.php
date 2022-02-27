@@ -8,7 +8,7 @@ if(isset($_GET["auswerten"])) {
 echo "<html lang='de'>
 <head>
 <meta charset='utf-8'>
-<title>Dynamische Auswahlfelder</title>
+<title>Einsende 1 - Dynamische Auswahlfelder</title>
 </head>
 <body>
 <form action='".$_SERVER["PHP_SELF"]."'?auswerten=1'>\n";
