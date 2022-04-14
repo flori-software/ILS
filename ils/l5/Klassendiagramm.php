@@ -57,7 +57,6 @@ var_dump($fritz);
 
 $maria = new Mitarbeiter(nname: "Schulze", vname: "Maria");
 var_dump($maria);
-$maria->gruppierung = 0;
 
 $timon = new Kunde(nname: "Fähnrich", vname: "Timon");
 $timon->setBonitaet(0);
