@@ -8,12 +8,4 @@ function myDatabaseConnection() {
     } 
 }
 
-
-
-
-
-
-
-
-
 ?>

@@ -18,14 +18,16 @@ body {
     <th>Artikelbezeichnung</th>
     <th>Preis</th>
 </tr>';
-
 $pdo = myDatabaseConnection();
-$sql = "SELECT * FROM `artikel`";
+$sql = "SELECT artikel.anr, gruppen.gruppe, artikel.name, artikel.preis FROM `artikel`
+JOIN gruppen ON 
+artikel.gnr = gruppen.gnr";
+
 if($stmt = $pdo->prepare($sql)) {
     $stmt->execute();
     while($row = $stmt->fetch()) {
         echo '<tr><td>'.$row["anr"].'</td>';
-        echo '<td>'.$row["gnr"].'</td>';
+        echo '<td>'.$row["gruppe"].'</td>';
         echo '<td>'.$row["name"].'</td>';
         echo '<td>'.$row["preis"].'</td></tr>';
     }
